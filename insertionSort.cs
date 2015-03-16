@@ -11,7 +11,7 @@ namespace ConsoleApplication3
         static void Main(string[] args)
         {
             Stopwatch stopwatch = new Stopwatch();
-            Console.WriteLine("Kaç elemanlı dizi olsun?");
+            Console.WriteLine("Kaç elemanlı dizi olsun?");//10,25,50,100,500 değer atanabilir.
             int c = int.Parse(Console.ReadLine());
             int[] dizi = new int[c];
             int rastsayi;
@@ -23,7 +23,7 @@ namespace ConsoleApplication3
             }
             Console.WriteLine(c + " elemanlı dizi üretildi.");
             stopwatch.Start();
-            Console.WriteLine("Dizideki en büyük sayı : " + InsertionSort(dizi) + " olarak bulundu.");
+            Console.WriteLine("Sıraya Dizilen Dizi : " + InsertionSort(dizi));
              stopwatch.Stop();
             TimeSpan ts = stopwatch.Elapsed; 
             string elapsedTime = String.Format("{0} saat {1} dakika {2} saniye",ts.Hours, ts.Minutes, ts.Seconds);
